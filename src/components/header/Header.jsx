@@ -34,27 +34,23 @@ function Header() {
 
 
   return (
-    <header className={`${darkMode?"bg-customDark text-customWhite":'bg-customLight text-customBlack'}  flex items-center justify-between sticky z-50 px-3 shadow-2xl top-0`}>
+    <header className={`${darkMode?" text-customWhite from-customDark3 to-customBlack":'from-customLight  to-customLight3 text-customBlack'} bg-gradient-to-br flex items-center justify-between sticky z-50 px-3 shadow-xl top-0 `}>
       <div  className="flex gap-3 items-center cursor-pointer" onClick={()=>navigate("/")}>
-        <img src="/logo.png" width="40px" alt="" />
-        <div className="font-bold text-2xl">Druma</div>
+        <img src="/logo.webp" width="40px" alt="" />
+        <div className="font-bold text-2xl ">Druma</div>
       </div>
       <div className="flex gap-3 items-center">
         <ul className="mx-auto w-fit p-2 flex gap-5">
           {
             navItems.map((item, index)=>(
-               <li key={index} onClick={() => navigate(item.slug)} className='cursor-pointer p-2 hover:rounded-xl '>{item.name}</li>
+               <li key={index} onClick={() => navigate(item.slug)} className={`cursor-pointer p-2 hover:rounded-xl font-semibold hover:text-customBlue duration-200`}>{item.name}</li>
             ))
           }
         </ul>
       </div>
       <div className="flex gap-3 items-center ">
-        <div className={`flex gap-2 justify-center items-center ${darkMode?"bg-customBlue":"bg-customLightBlue"}  py-1 px-3 rounded-lg`}>
-          <span>Login</span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-          </svg>
-
+        <div className={`flex gap-2 justify-center items-center bg-gradient-to-br text-customWhite from-customBlue  to-customBlue2 py-2 px-3 rounded-lg cursor-pointer `}>
+          <span className='font-semibold' onClick={()=>navigate("/login")}>Get Started</span>
         </div>
       {darkMode?
         <svg onClick={handleTheme} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 hover:cursor-pointer">
