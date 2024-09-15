@@ -67,7 +67,7 @@ function Header() {
         </ul>
       </div>
       <div className="flex gap-3 items-center ">
-        <div className={`flex gap-2 justify-center items-center bg-gradient-to-br text-customWhite from-customBlue  to-customBlue2 py-2 px-3 rounded-lg cursor-pointer `}>
+        <div className={`flex gap-2 justify-center items-center bg-gradient-to-br text-customWhite from-customBlue  to-customBlue2 py-2 px-3 rounded-lg cursor-pointer  `}>
           <span className='font-semibold' onClick={()=>navigate("/login")}>Get Started</span>
         </div>
       {darkMode?

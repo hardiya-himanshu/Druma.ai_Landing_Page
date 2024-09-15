@@ -12,8 +12,18 @@ export default {
           '50%': { 'background-position': '100% 50%' },
           '100%': { 'background-position': '0% 50%' },
         },
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        fadeInDown: {
+          '0%': { opacity: '0', transform: 'translateY(-20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
       animation: {
+        fadeInUp: 'fadeInUp 1s ease-out',
+        fadeInDown: 'fadeInDown 1s ease-out',
         gradientMove: 'gradientMove 5s ease infinite',
       },
       colors: {
