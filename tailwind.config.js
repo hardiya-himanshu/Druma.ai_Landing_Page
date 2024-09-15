@@ -6,6 +6,16 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        gradientMove: {
+          '0%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' },
+          '100%': { 'background-position': '0% 50%' },
+        },
+      },
+      animation: {
+        gradientMove: 'gradientMove 5s ease infinite',
+      },
       colors: {
         customLight: '#F2F2F2',
         customLight2: '#FFFFFF',

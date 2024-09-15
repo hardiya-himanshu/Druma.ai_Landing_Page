@@ -1,18 +1,11 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import ThemeWrapper from '../../utils/ThemeWrapper'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch,useSelector } from 'react-redux'
 import { toggleTheme } from '../../store/themeSlice'
 
 function Header() {
-  const darkMode = useSelector((state)=>state.theme.darkMode)
-        const dispatch = useDispatch()
-
-  const handleTheme = ()=>{
-      dispatch(toggleTheme())
-  }
-
-  const navigate = useNavigate()
+  
   const navItems = [
     {
       name:"Home",
@@ -32,9 +25,34 @@ function Header() {
     }
   ]
 
+  const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate()
+  const darkMode = useSelector((state)=>state.theme.darkMode)
+  const dispatch = useDispatch()
 
+  const handleTheme = ()=>{
+      dispatch(toggleTheme())
+  }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+      window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  
   return (
-    <header className={`${darkMode?" text-customWhite from-customDark3 to-customBlack":'from-customLight  to-customLight3 text-customBlack'} bg-gradient-to-br flex items-center justify-between sticky z-50 px-3 shadow-xl top-0 `}>
+    <header className={` ${darkMode?" text-customWhite ":' text-customBlack'} bg-gradient-to-br flex items-center justify-between fixed z-50 px-3 right-0 left-0 top-0 transition-all duration-500 ${isScrolled ? `${darkMode?" text-customWhite bg-customDark2 ":'bg-customLight text-customBlack'}` : 'bg-transparent'}`}>
       <div  className="flex gap-3 items-center cursor-pointer" onClick={()=>navigate("/")}>
         <img src="/logo.webp" width="40px" alt="" />
         <div className="font-bold text-2xl ">Druma</div>
