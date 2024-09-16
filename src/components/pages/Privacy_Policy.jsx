@@ -1,11 +1,13 @@
 import React from "react";
+import ThemeWrapper from '../../utils/ThemeWrapper'
 
-export default function Privacy_Policy() {
+
+function Privacy_Policy({darkMode}) {
   return (
-    <div className="mb-10">
+    <>
       <main
         id="PAGES_CONTAINER"
-        className="PAGES_CONTAINER"
+        className={`PAGES_CONTAINER ${darkMode?" bg-customDark4 text-customWhite":'bg-customLight2 text-customBlack'}`}
         tabIndex="-1"
         style={{
           left: "0px",
@@ -16,6 +18,8 @@ export default function Privacy_Policy() {
           alignSelf: "stretch",
           position: "relative",
           marginTop: "0px",
+          paddingTop: "60px",
+          paddingBottom: "60px",
           marginBottom: "0px",
           display: "block",
         }}
@@ -189,8 +193,8 @@ export default function Privacy_Policy() {
                             padding: "0px",
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
-                            font: "normal normal normal 24px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif",
-                            color: "rgb(96,94,94)",
+                            font: "",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -220,7 +224,7 @@ export default function Privacy_Policy() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               <span
@@ -230,10 +234,10 @@ export default function Privacy_Policy() {
                                   border: "0px",
                                   margin: "0px",
                                   outline: "0px",
-                                  padding: "0px",
+                                  marginBottom: "20px",
                                   verticalAlign: "baseline",
                                   fontFamily:
-                                    "avenir-lt-w01_85-heavy1475544, sans-serif",
+                                    "",
                                 }}
                               >
                                 Privacy Policy
@@ -280,8 +284,8 @@ export default function Privacy_Policy() {
                             padding: "0px",
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
-                            font: "normal normal normal 24px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif",
-                            color: "rgb(96,94,94)",
+                            font: "",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -299,7 +303,7 @@ export default function Privacy_Policy() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             <span
@@ -324,7 +328,7 @@ export default function Privacy_Policy() {
                                   padding: "0px",
                                   verticalAlign: "baseline",
                                   fontFamily:
-                                    "avenir-lt-w01_35-light1475496, sans-serif",
+                                    "",
                                 }}
                               >
                                 We receive, collect and store any information
@@ -357,8 +361,8 @@ export default function Privacy_Policy() {
                             padding: "0px",
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
-                            font: "normal normal normal 24px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif",
-                            color: "rgb(96,94,94)",
+                            font: "",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -376,7 +380,7 @@ export default function Privacy_Policy() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             <span
@@ -401,7 +405,7 @@ export default function Privacy_Policy() {
                                   padding: "0px",
                                   verticalAlign: "baseline",
                                   fontFamily:
-                                    "avenir-lt-w01_35-light1475496, sans-serif",
+                                    "",
                                 }}
                               >
                                 <span
@@ -430,8 +434,8 @@ export default function Privacy_Policy() {
                             padding: "0px",
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
-                            font: "normal normal normal 24px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif",
-                            color: "rgb(96,94,94)",
+                            font: "",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -449,7 +453,7 @@ export default function Privacy_Policy() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             <span
@@ -474,7 +478,7 @@ export default function Privacy_Policy() {
                                   padding: "0px",
                                   verticalAlign: "baseline",
                                   fontFamily:
-                                    "avenir-lt-w01_35-light1475496, sans-serif",
+                                    "",
                                 }}
                               >
                                 When you conduct a transaction on our website,
@@ -496,8 +500,8 @@ export default function Privacy_Policy() {
                             padding: "0px",
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
-                            font: "normal normal normal 24px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif",
-                            color: "rgb(96,94,94)",
+                            font: "",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -515,7 +519,7 @@ export default function Privacy_Policy() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             <span
@@ -540,7 +544,7 @@ export default function Privacy_Policy() {
                                   padding: "0px",
                                   verticalAlign: "baseline",
                                   fontFamily:
-                                    "avenir-lt-w01_35-light1475496, sans-serif",
+                                    "",
                                 }}
                               >
                                 <span
@@ -570,7 +574,7 @@ export default function Privacy_Policy() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -587,7 +591,7 @@ export default function Privacy_Policy() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             <span
@@ -612,7 +616,7 @@ export default function Privacy_Policy() {
                                   padding: "0px",
                                   verticalAlign: "baseline",
                                   fontFamily:
-                                    "avenir-lt-w01_35-light1475496, sans-serif",
+                                    "",
                                 }}
                               >
                                 We collect such Non-personal and Personal
@@ -638,9 +642,9 @@ export default function Privacy_Policy() {
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             listStyleType: "decimal",
-                            color: "rgb(0, 0, 0)",
+                            color: "",
                             fontFamily:
-                              "avenir-lt-w01_35-light1475496, sans-serif",
+                              "",
                             fontSize: "15px",
                           }}
                         >
@@ -668,7 +672,7 @@ export default function Privacy_Policy() {
                                 padding: "0px",
                                 verticalAlign: "baseline",
                                 font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                                color: "rgb(96,94,94)",
+                                color: "",
                                 letterSpacing: "normal",
                                 lineHeight: "normal",
                                 marginBlock: "0px",
@@ -685,7 +689,7 @@ export default function Privacy_Policy() {
                                   outline: "0px",
                                   padding: "0px",
                                   verticalAlign: "baseline",
-                                  color: "rgb(0, 0, 0)",
+                                  color: "",
                                 }}
                               >
                                 <span
@@ -710,7 +714,7 @@ export default function Privacy_Policy() {
                                       padding: "0px",
                                       verticalAlign: "baseline",
                                       fontFamily:
-                                        "avenir-lt-w01_35-light1475496, sans-serif",
+                                        "",
                                     }}
                                   >
                                     To provide and operate the Services;
@@ -743,7 +747,7 @@ export default function Privacy_Policy() {
                                 padding: "0px",
                                 verticalAlign: "baseline",
                                 font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                                color: "rgb(96,94,94)",
+                                color: "",
                                 letterSpacing: "normal",
                                 lineHeight: "normal",
                                 marginBlock: "0px",
@@ -760,7 +764,7 @@ export default function Privacy_Policy() {
                                   outline: "0px",
                                   padding: "0px",
                                   verticalAlign: "baseline",
-                                  color: "rgb(0, 0, 0)",
+                                  color: "",
                                 }}
                               >
                                 <span
@@ -785,7 +789,7 @@ export default function Privacy_Policy() {
                                       padding: "0px",
                                       verticalAlign: "baseline",
                                       fontFamily:
-                                        "avenir-lt-w01_35-light1475496, sans-serif",
+                                        "",
                                     }}
                                   >
                                     To provide our Users with ongoing customer
@@ -819,7 +823,7 @@ export default function Privacy_Policy() {
                                 padding: "0px",
                                 verticalAlign: "baseline",
                                 font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                                color: "rgb(96,94,94)",
+                                color: "",
                                 letterSpacing: "normal",
                                 lineHeight: "normal",
                                 marginBlock: "0px",
@@ -836,7 +840,7 @@ export default function Privacy_Policy() {
                                   outline: "0px",
                                   padding: "0px",
                                   verticalAlign: "baseline",
-                                  color: "rgb(0, 0, 0)",
+                                  color: "",
                                 }}
                               >
                                 <span
@@ -861,7 +865,7 @@ export default function Privacy_Policy() {
                                       padding: "0px",
                                       verticalAlign: "baseline",
                                       fontFamily:
-                                        "avenir-lt-w01_35-light1475496, sans-serif",
+                                        "",
                                     }}
                                   >
                                     To be able to contact our Visitors and Users
@@ -896,7 +900,7 @@ export default function Privacy_Policy() {
                                 padding: "0px",
                                 verticalAlign: "baseline",
                                 font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                                color: "rgb(96,94,94)",
+                                color: "",
                                 letterSpacing: "normal",
                                 lineHeight: "normal",
                                 marginBlock: "0px",
@@ -913,7 +917,7 @@ export default function Privacy_Policy() {
                                   outline: "0px",
                                   padding: "0px",
                                   verticalAlign: "baseline",
-                                  color: "rgb(0, 0, 0)",
+                                  color: "",
                                 }}
                               >
                                 <span
@@ -938,7 +942,7 @@ export default function Privacy_Policy() {
                                       padding: "0px",
                                       verticalAlign: "baseline",
                                       fontFamily:
-                                        "avenir-lt-w01_35-light1475496, sans-serif",
+                                        "",
                                     }}
                                   >
                                     To create aggregated statistical data and
@@ -975,7 +979,7 @@ export default function Privacy_Policy() {
                                 padding: "0px",
                                 verticalAlign: "baseline",
                                 font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                                color: "rgb(96,94,94)",
+                                color: "",
                                 letterSpacing: "normal",
                                 lineHeight: "normal",
                                 marginBlock: "0px",
@@ -992,7 +996,7 @@ export default function Privacy_Policy() {
                                   outline: "0px",
                                   padding: "0px",
                                   verticalAlign: "baseline",
-                                  color: "rgb(0, 0, 0)",
+                                  color: "",
                                 }}
                               >
                                 <span
@@ -1017,7 +1021,7 @@ export default function Privacy_Policy() {
                                       padding: "0px",
                                       verticalAlign: "baseline",
                                       fontFamily:
-                                        "avenir-lt-w01_35-light1475496, sans-serif",
+                                        "",
                                     }}
                                   >
                                     To comply with any applicable laws and
@@ -1038,7 +1042,7 @@ export default function Privacy_Policy() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1055,7 +1059,7 @@ export default function Privacy_Policy() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             <span
@@ -1080,7 +1084,7 @@ export default function Privacy_Policy() {
                                   padding: "0px",
                                   verticalAlign: "baseline",
                                   fontFamily:
-                                    "avenir-lt-w01_35-light1475496, sans-serif",
+                                    "",
                                 }}
                               >
                                 <span
@@ -1110,7 +1114,7 @@ export default function Privacy_Policy() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1127,7 +1131,7 @@ export default function Privacy_Policy() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             <span
@@ -1152,7 +1156,7 @@ export default function Privacy_Policy() {
                                   padding: "0px",
                                   verticalAlign: "baseline",
                                   fontFamily:
-                                    "avenir-lt-w01_35-light1475496, sans-serif",
+                                    "",
                                 }}
                               >
                                 Our website is hosted on the Wix.com platform.
@@ -1181,7 +1185,7 @@ export default function Privacy_Policy() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1198,7 +1202,7 @@ export default function Privacy_Policy() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             <span
@@ -1223,7 +1227,7 @@ export default function Privacy_Policy() {
                                   padding: "0px",
                                   verticalAlign: "baseline",
                                   fontFamily:
-                                    "avenir-lt-w01_35-light1475496, sans-serif",
+                                    "",
                                 }}
                               >
                                 <span
@@ -1253,7 +1257,7 @@ export default function Privacy_Policy() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1270,7 +1274,7 @@ export default function Privacy_Policy() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             <span
@@ -1295,7 +1299,7 @@ export default function Privacy_Policy() {
                                   padding: "0px",
                                   verticalAlign: "baseline",
                                   fontFamily:
-                                    "avenir-lt-w01_35-light1475496, sans-serif",
+                                    "",
                                 }}
                               >
                                 We may contact you to notify you regarding your
@@ -1321,7 +1325,7 @@ export default function Privacy_Policy() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1338,7 +1342,7 @@ export default function Privacy_Policy() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             <span
@@ -1363,7 +1367,7 @@ export default function Privacy_Policy() {
                                   padding: "0px",
                                   verticalAlign: "baseline",
                                   fontFamily:
-                                    "avenir-lt-w01_35-light1475496, sans-serif",
+                                    "",
                                 }}
                               >
                                 <span
@@ -1393,7 +1397,7 @@ export default function Privacy_Policy() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1410,7 +1414,7 @@ export default function Privacy_Policy() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             <span
@@ -1423,7 +1427,7 @@ export default function Privacy_Policy() {
                                 padding: "0px",
                                 verticalAlign: "baseline",
                                 fontFamily:
-                                  "avenir-lt-w01_35-light1475496, sans-serif",
+                                  "",
                               }}
                             >
                               <span
@@ -1462,7 +1466,7 @@ export default function Privacy_Policy() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1479,7 +1483,7 @@ export default function Privacy_Policy() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             <span
@@ -1492,7 +1496,7 @@ export default function Privacy_Policy() {
                                 padding: "0px",
                                 verticalAlign: "baseline",
                                 fontFamily:
-                                  "avenir-lt-w01_35-light1475496, sans-serif",
+                                  "",
                               }}
                             >
                               <span
@@ -1534,7 +1538,7 @@ export default function Privacy_Policy() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1551,7 +1555,7 @@ export default function Privacy_Policy() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             <span
@@ -1564,7 +1568,7 @@ export default function Privacy_Policy() {
                                 padding: "0px",
                                 verticalAlign: "baseline",
                                 fontFamily:
-                                  "avenir-lt-w01_35-light1475496, sans-serif",
+                                  "",
                               }}
                             >
                               <span
@@ -1605,6 +1609,9 @@ body:{
 `,
         }}
       />
-    </div>
+    </>
   );
 }
+
+export default ThemeWrapper(Privacy_Policy)
+

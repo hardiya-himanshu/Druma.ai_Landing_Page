@@ -33,6 +33,7 @@ export default {
         customDark: '#002244',
         customDark2: '#012169',
         customDark3: '#0E3386',
+        customDark4: '#000033',
         customBlack: 'black',
         customWhite: 'white',
         customBlue: '#1E90FF',

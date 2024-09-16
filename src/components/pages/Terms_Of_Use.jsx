@@ -1,11 +1,12 @@
 import React from "react";
+import ThemeWrapper from '../../utils/ThemeWrapper'
 
-export default function Terms_Of_Use() {
+function Terms_Of_Use({darkMode}) {
   return (
     <>
       <main
         id="PAGES_CONTAINER"
-        className="PAGES_CONTAINER"
+        className={`PAGES_CONTAINER ${darkMode?" bg-customDark4 text-customWhite":'bg-customLight2 text-customBlack'} `}
         tabIndex="-1"
         style={{
           left: "0px",
@@ -17,6 +18,7 @@ export default function Terms_Of_Use() {
           position: "relative",
           marginTop: "0px",
           marginBottom: "0px",
+          paddingTop: "60px",
           display: "block",
         }}
       >
@@ -190,7 +192,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 24px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -220,7 +222,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               <span
@@ -281,7 +283,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -310,7 +312,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               AGREEMENT TO TERMS
@@ -327,7 +329,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -347,7 +349,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -364,7 +366,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             These Terms of Use constitute a legally binding
@@ -424,7 +426,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -444,7 +446,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -461,7 +463,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             Supplemental terms and conditions or documents that
@@ -492,7 +494,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -512,7 +514,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -529,7 +531,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             The information provided on the Site is not intended
@@ -555,7 +557,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -575,7 +577,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -604,7 +606,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               INTELLECTUAL PROPERTY RIGHTS
@@ -621,7 +623,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -641,7 +643,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -658,7 +660,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             Unless otherwise indicated, the Site is our
@@ -694,7 +696,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -714,7 +716,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -731,7 +733,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             Provided that you are eligible to use the Site, you
@@ -753,7 +755,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -773,7 +775,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -802,7 +804,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               USER REPRESENTATIONS
@@ -819,7 +821,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -839,7 +841,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -856,7 +858,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             By using the Site, you represent and warrant that:
@@ -885,7 +887,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -905,7 +907,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -922,7 +924,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             If you provide any information that is untrue,
@@ -942,7 +944,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -962,7 +964,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -991,7 +993,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               USER REGISTRATION
@@ -1008,7 +1010,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1028,7 +1030,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1045,7 +1047,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             You may be required to register with the Site. You
@@ -1067,7 +1069,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1087,7 +1089,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1116,7 +1118,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               PROHIBITED ACTIVITIES
@@ -1133,7 +1135,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1153,7 +1155,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1170,7 +1172,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             You may not access or use the Site for any purpose
@@ -1190,7 +1192,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1210,7 +1212,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1227,7 +1229,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             As a user of the Site, you agree not to:
@@ -1243,7 +1245,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1263,7 +1265,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1280,7 +1282,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             1. Systematically retrieve data or other content
@@ -1299,7 +1301,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1316,7 +1318,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             2. Trick, defraud, or mislead us and other users,
@@ -1334,7 +1336,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1351,7 +1353,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             3. Circumvent, disable, or otherwise interfere with
@@ -1371,7 +1373,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1388,7 +1390,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             4. Disparage, tarnish, or otherwise harm, in our
@@ -1405,7 +1407,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1422,7 +1424,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             5. Use any information obtained from the Site in
@@ -1439,7 +1441,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1456,7 +1458,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             6. Make improper use of our support services or
@@ -1473,7 +1475,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1490,7 +1492,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             7. Use the Site in a manner inconsistent with any
@@ -1507,7 +1509,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1524,7 +1526,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             8. Use the Site to advertise or offer to sell goods
@@ -1541,7 +1543,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1558,7 +1560,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             9. Upload or transmit (or attempt to upload or to
@@ -1582,7 +1584,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1599,7 +1601,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             10. Engage in any automated use of the system, such
@@ -1618,7 +1620,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1635,7 +1637,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             11. Delete the copyright or other proprietary rights
@@ -1652,7 +1654,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1669,7 +1671,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             12. Attempt to impersonate another user or person or
@@ -1686,7 +1688,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1703,7 +1705,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             13. Sell or otherwise transfer your profile.
@@ -1719,7 +1721,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1736,7 +1738,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             14. Upload or transmit (or attempt to upload or to
@@ -1759,7 +1761,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1776,7 +1778,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             15. Interfere with, disrupt, or create an undue
@@ -1794,7 +1796,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1811,7 +1813,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             16. Harass, annoy, intimidate, or threaten any of
@@ -1829,7 +1831,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1846,7 +1848,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             17. Attempt to bypass any measures of the Site
@@ -1864,7 +1866,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1881,7 +1883,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             18. Copy or adapt the Site’s software, including but
@@ -1899,7 +1901,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1916,7 +1918,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             19. Decipher, decompile, disassemble, or reverse
@@ -1934,7 +1936,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1951,7 +1953,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             20. Except as may be the result of standard search
@@ -1973,7 +1975,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -1990,7 +1992,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             21. Use a buying agent or purchasing agent to make
@@ -2007,7 +2009,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2024,7 +2026,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             22. Make any unauthorized use of the Site, including
@@ -2044,7 +2046,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2061,7 +2063,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             23. Use the Site as part of any effort to compete
@@ -2080,7 +2082,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2100,7 +2102,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2129,7 +2131,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               USER GENERATED CONTRIBUTIONS 
@@ -2146,7 +2148,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2166,7 +2168,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2183,7 +2185,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             The Site may invite you to chat, contribute to, or
@@ -2214,7 +2216,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2234,7 +2236,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2251,7 +2253,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             1.  The creation, distribution, transmission, public
@@ -2273,7 +2275,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2290,7 +2292,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             2.  You are the creator and owner of or have the
@@ -2311,7 +2313,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2328,7 +2330,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             3.  You have the written consent, release, and/or
@@ -2350,7 +2352,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2367,7 +2369,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             4.  Your Contributions are not false, inaccurate, or
@@ -2384,7 +2386,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2401,7 +2403,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             5.  Your Contributions are not unsolicited or
@@ -2420,7 +2422,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2437,7 +2439,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             6.  Your Contributions are not obscene, lewd,
@@ -2456,7 +2458,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2473,7 +2475,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             7.  Your Contributions do not ridicule, mock,
@@ -2490,7 +2492,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2507,7 +2509,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             8.  Your Contributions are not used to harass or
@@ -2526,7 +2528,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2543,7 +2545,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             9.  Your Contributions do not violate any applicable
@@ -2560,7 +2562,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2577,7 +2579,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             10.  Your Contributions do not violate the privacy
@@ -2594,7 +2596,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2611,7 +2613,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             11.  Your Contributions do not contain any material
@@ -2630,7 +2632,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2647,7 +2649,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             12.  Your Contributions do not violate any
@@ -2666,7 +2668,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2683,7 +2685,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             13.  Your Contributions do not include any offensive
@@ -2702,7 +2704,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2719,7 +2721,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             14.  Your Contributions do not otherwise violate, or
@@ -2738,7 +2740,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2758,7 +2760,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2775,7 +2777,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             Any use of the Site in violation of the foregoing
@@ -2794,7 +2796,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2814,7 +2816,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2843,7 +2845,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               CONTRIBUTION LICENSE
@@ -2860,7 +2862,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2880,7 +2882,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2897,7 +2899,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             By posting your Contributions to any part of the
@@ -2932,7 +2934,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2952,7 +2954,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -2969,7 +2971,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             This license will apply to any form, media, or
@@ -2993,7 +2995,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3013,7 +3015,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3030,7 +3032,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             We do not assert any ownership over your
@@ -3057,7 +3059,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3077,7 +3079,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3094,7 +3096,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             We have the right, in our sole and absolute
@@ -3117,7 +3119,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3137,7 +3139,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3166,7 +3168,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               SOCIAL MEDIA
@@ -3183,7 +3185,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3203,7 +3205,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3220,7 +3222,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             As part of the functionality of the Site, you may
@@ -3299,7 +3301,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3319,7 +3321,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3348,7 +3350,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               SUBMISSIONS
@@ -3365,7 +3367,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3385,7 +3387,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3402,7 +3404,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             You acknowledge and agree that any questions,
@@ -3434,7 +3436,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3454,7 +3456,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3483,7 +3485,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               SITE MANAGEMENT
@@ -3500,7 +3502,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3520,7 +3522,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3537,7 +3539,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             We reserve the right, but not the obligation, to:
@@ -3570,7 +3572,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3590,7 +3592,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3619,7 +3621,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               PRIVACY POLICY
@@ -3636,7 +3638,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3656,7 +3658,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3673,7 +3675,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             We care about data privacy and security. Please
@@ -3724,7 +3726,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3744,7 +3746,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3773,7 +3775,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               COPYRIGHT INFRINGEMENTS
@@ -3790,7 +3792,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3810,7 +3812,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3827,7 +3829,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             We respect the intellectual property rights of
@@ -3856,7 +3858,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3876,7 +3878,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3905,7 +3907,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               TERM AND TERMINATION
@@ -3922,7 +3924,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3942,7 +3944,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -3959,7 +3961,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             These Terms of Use shall remain in full force and
@@ -3988,7 +3990,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4008,7 +4010,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4025,7 +4027,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             If we terminate or suspend your account for any
@@ -4049,7 +4051,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4069,7 +4071,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4098,7 +4100,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               MODIFICATIONS AND INTERRUPTIONS
@@ -4115,7 +4117,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4135,7 +4137,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4152,7 +4154,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             We reserve the right to change, modify, or remove
@@ -4176,7 +4178,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4196,7 +4198,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4213,7 +4215,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             We cannot guarantee the Site will be available at
@@ -4243,7 +4245,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4263,7 +4265,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4292,7 +4294,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               GOVERNING LAW
@@ -4309,7 +4311,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4329,7 +4331,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4346,7 +4348,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             These Terms shall be governed by and defined
@@ -4367,7 +4369,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4387,7 +4389,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4416,7 +4418,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               DISPUTE RESOLUTION
@@ -4433,7 +4435,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4453,7 +4455,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4470,7 +4472,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             Informal Negotiations
@@ -4486,7 +4488,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4506,7 +4508,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4523,7 +4525,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             To expedite resolution and control the cost of any
@@ -4549,7 +4551,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4569,7 +4571,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4586,7 +4588,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             Binding Arbitration
@@ -4602,7 +4604,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4622,7 +4624,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4639,7 +4641,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             Any dispute arising out of or in connection with
@@ -4668,7 +4670,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4688,7 +4690,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4705,7 +4707,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             Restrictions
@@ -4721,7 +4723,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4741,7 +4743,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4758,7 +4760,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             The Parties agree that any arbitration shall be
@@ -4783,7 +4785,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4803,7 +4805,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4820,7 +4822,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             Exceptions to Informal Negotiations and Arbitration
@@ -4836,7 +4838,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4856,7 +4858,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4873,7 +4875,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             The Parties agree that the following Disputes are
@@ -4905,7 +4907,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4925,7 +4927,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4954,7 +4956,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               CORRECTIONS
@@ -4971,7 +4973,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -4991,7 +4993,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5008,7 +5010,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             There may be information on the Site that contains
@@ -5030,7 +5032,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5050,7 +5052,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5079,7 +5081,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               DISCLAIMER
@@ -5096,7 +5098,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5116,7 +5118,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5133,7 +5135,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             THE SITE IS PROVIDED ON AN AS-IS AND AS-AVAILABLE
@@ -5186,7 +5188,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5206,7 +5208,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5235,7 +5237,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               LIMITATIONS OF LIABILITY
@@ -5252,7 +5254,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5272,7 +5274,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5289,7 +5291,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR
@@ -5323,7 +5325,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5343,7 +5345,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5360,7 +5362,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             INDEMNIFICATION
@@ -5376,7 +5378,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5396,7 +5398,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5413,7 +5415,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             You agree to defend, indemnify, and hold us
@@ -5451,7 +5453,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5471,7 +5473,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5500,7 +5502,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               USER DATA
@@ -5517,7 +5519,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5537,7 +5539,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5554,7 +5556,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             We will maintain certain data that you transmit to
@@ -5580,7 +5582,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5600,7 +5602,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5629,7 +5631,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND
@@ -5647,7 +5649,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5667,7 +5669,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5684,7 +5686,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             Visiting the Site, sending us emails, and completing
@@ -5717,7 +5719,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5737,7 +5739,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5766,7 +5768,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               MISCELLANEOUS
@@ -5783,7 +5785,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5803,7 +5805,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5820,7 +5822,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             These Terms of Use and any policies or operating
@@ -5862,7 +5864,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5882,7 +5884,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5911,7 +5913,7 @@ export default function Terms_Of_Use() {
                                 outline: "0px",
                                 padding: "0px",
                                 verticalAlign: "baseline",
-                                color: "rgb(0, 0, 0)",
+                                color: "",
                               }}
                             >
                               CONTACT US 
@@ -5928,7 +5930,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5948,7 +5950,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -5965,7 +5967,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             In order to resolve a complaint regarding the Site
@@ -5983,7 +5985,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -6003,7 +6005,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -6020,7 +6022,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             Druma Technologies
@@ -6036,7 +6038,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -6053,7 +6055,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             Ravi Uday Co-operative Society, Juhu Chandan
@@ -6071,7 +6073,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -6088,7 +6090,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             Thane, Maharashtra 400601
@@ -6104,7 +6106,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -6121,7 +6123,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             India
@@ -6137,7 +6139,7 @@ export default function Terms_Of_Use() {
                             verticalAlign: "baseline",
                             pointerEvents: "auto",
                             font: "normal normal normal 13px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif",
-                            color: "rgb(96,94,94)",
+                            color: "",
                             letterSpacing: "normal",
                             lineHeight: "normal",
                             marginBlock: "0px",
@@ -6154,7 +6156,7 @@ export default function Terms_Of_Use() {
                               outline: "0px",
                               padding: "0px",
                               verticalAlign: "baseline",
-                              color: "rgb(0, 0, 0)",
+                              color: "",
                             }}
                           >
                             <a
@@ -6199,3 +6201,5 @@ body:{
     </>
   );
 }
+
+export default ThemeWrapper(Terms_Of_Use)

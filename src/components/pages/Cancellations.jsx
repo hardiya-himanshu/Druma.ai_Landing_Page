@@ -6,7 +6,7 @@ import ThemeWrapper from '../../utils/ThemeWrapper'
     <>
       <main
         id="PAGES_CONTAINER"
-        className={`PAGES_CONTAINER ${darkMode?" bg-customDark3 text-customWhite":'bg-customLight2 text-customBlack'} `}
+        className={`PAGES_CONTAINER ${darkMode?" bg-customDark4 text-customWhite":'bg-customLight2 text-customBlack'} `}
         tabIndex="-1"
         style={{
           left: "0px",
@@ -16,7 +16,7 @@ import ThemeWrapper from '../../utils/ThemeWrapper'
           gridArea: "3 / 1 / 4 / 2",
           alignSelf: "stretch",
           position: "relative",
-          marginTop: "0px",
+          paddingTop: "60px",
           marginBottom: "0px",
           display: "block",
         }}
