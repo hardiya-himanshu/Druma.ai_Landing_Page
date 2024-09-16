@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        fadeInUp: 'fadeInUp 1s ease-out',
+        fadeInDown: 'fadeInDown 1s ease-out',
+        gradientMove: 'gradientMove 5s ease infinite',
+      },
+      
       keyframes: {
         gradientMove: {
           '0%': { 'background-position': '0% 50%' },
@@ -21,11 +27,7 @@ export default {
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
       },
-      animation: {
-        fadeInUp: 'fadeInUp 1s ease-out',
-        fadeInDown: 'fadeInDown 1s ease-out',
-        gradientMove: 'gradientMove 5s ease infinite',
-      },
+    
       colors: {
         customLight: '#F2F2F2',
         customLight2: '#FFFFFF',
