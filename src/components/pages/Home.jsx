@@ -32,7 +32,7 @@ function Home({darkMode}) {
         </div>
       </section>
 
-      <section id='section2' className={` ${darkMode?"bg-customDark4  text-customWhite":'bg-white text-customBlack'} h-fit bg-white py-20 text-center`}>
+      <section id='section2' className={` ${darkMode?"bg-customDark4  text-customWhite":'bg-white text-customBlack'} h-fit  py-20 text-center`}>
         <h2 className="text-5xl font-bold mb-6 animate-fadeInUp">Our Services</h2>
         
         {/* AI */}
@@ -98,7 +98,7 @@ function Home({darkMode}) {
         </div>
       </section>
 
-      <section id='section4' className={`${darkMode?"bg-customDark4 text-customWhite":'text-customBlack bg-customLight'} bg-white py-20 text-center`}>
+      <section id='section4' className={`${darkMode?"bg-customDark4 text-customWhite":'text-customBlack bg-customLight'} py-20 text-center`}>
         <h2 className="text-5xl font-bold mb-4 animate-fadeInUp">Contact</h2>
         <p className="max-w-3xl mx-auto text-lg mb-8 animate-fadeInUp">
           Reach out to learn more about how our services can help your business grow.
