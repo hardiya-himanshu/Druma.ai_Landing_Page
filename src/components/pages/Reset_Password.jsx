@@ -15,7 +15,7 @@ function Reset_Password({darkMode}) {
     <div className={`h-screen flex  w-screen`} >
       <div className={`bg-[url('/login-bg.jpg')] bg-cover w-2/3 h-screen`}>
       </div>
-      <div className={`${darkMode?"from-customDark2 via-customDark to-customBlack text-customWhite":'bg-customLight text-customBlack'} shadow-md h-full p-8 w-full max-w-lg bg-gradient-to-br flex text-center flex-col justify-center`}>
+      <div className={`${darkMode?"from-customDark2 via-customDark to-customBlack text-customWhite":'bg-customLight text-customBlack'} shadow-md h-full p-8 w-full max-w-lg bg-gradient-to-br flex min-w-80 text-center flex-col justify-center`}>
         <h2 className="text-4xl font-semibold text-center mb-10">RESET PASSWORD</h2>
         <div className="mb-6 text-center">Enter your login email and we’ll send you a link to reset your password.
         </div>

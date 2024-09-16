@@ -28,15 +28,15 @@ function ContactUs({darkMode}) {
           </div>
          
         </div>
-      <div className={`w-fit  mx-auto p-6 bg-transparent rounded-md z-40 ${darkMode?"from-customDark2 to-customDark3 text-customWhite":'from-customLight2 text-customBlack to-gray-500'} shadow-lg bg-gradient-to-br flex  flex-col justify-center`}>
+      <div className={`  mx-auto p-6 bg-transparent rounded-md z-40 ${darkMode?"from-customDark2 to-customDark3 text-customWhite":'from-customLight2 text-customBlack to-gray-500'} shadow-lg bg-gradient-to-br flex  flex-col justify-center`}>
 
       <form onSubmit={handleSubmit(onSubmit)}>
 
         {/* Select Service */}
-        <div className='flex gap-10 '>
+        <div className='flex gap-10 flex-wrap justify-center'>
 
-          <div >
-            <div className="mb-4 w-60">
+          <div className=''>
+            <div className="mb-4 min-w-60">
 
             <select 
               {...register('service', { required: true })} 

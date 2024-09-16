@@ -11,7 +11,7 @@ function Home({darkMode}) {
   return (
     <div className={`w-full`} >
       
-      <section id='section1' className={`parallax bg-gradient-to-br ${darkMode?"from-blue-900 via-blue-700 to-cyan-500  text-customWhite":'from-white to-gray-600 via-gray-400'} bg-[length:200%_200%] animate-gradientMove  h-screen relative`}>
+      <section id='section1' className={`p-4 bg-gradient-to-br ${darkMode?"from-blue-900 via-blue-700 to-cyan-500  text-customWhite":'from-white to-gray-600 via-gray-400'} bg-[length:200%_200%] animate-gradientMove  h-screen relative`}>
         <div className={`absolute inset-0 bg-gradient-to-b ${darkMode?"from-black/10 via-black/60 to-customDark4/100":" from-black/0 to-black/80"}`}></div>
         
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
@@ -32,11 +32,11 @@ function Home({darkMode}) {
         </div>
       </section>
 
-      <section id='section2' className={` ${darkMode?"bg-customDark4  text-customWhite":'bg-white text-customBlack'} h-fit  py-20 text-center`}>
+      <section id='section2' className={`p-4 ${darkMode?"bg-customDark4  text-customWhite":'bg-white text-customBlack'} h-fit  py-20 text-center`}>
         <h2 className="text-5xl font-bold mb-6 animate-fadeInUp">Our Services</h2>
         
         {/* AI */}
-        <div className='flex justify-center items-center gap-10 mt-16'>
+        <div className='flex justify-center items-center gap-10 mt-16 flex-wrap'>
           <div className='max-w-2xl text-left'>
             <p className=" mx-auto text-xl font-semibold mb-10 animate-fadeInUp">
             &#8226; Hire a remote AI department
@@ -53,15 +53,19 @@ function Home({darkMode}) {
           </div>
         </div>
         {/* Data labeling */}
-        <div className='flex justify-center items-center gap-10 mt-16'>
+        <div className='flex justify-center items-center gap-10 mt-16 flex-wrap'>
           <div className='flex flex-col  items-center'>
-            <div className='flex gap-32'>
-            <span>Without Druma</span>
-            <span>With Druma</span>
+            <div className='flex gap-32 '>
             </div>
-            <div className='flex gap-5'>
-            <img src="/data-label1.png" width="200px" alt="" />
-            <img src="/data-label2.png" width="200px" alt="" />
+            <div className='flex gap-5 flex-wrap'>
+              <div>
+                <span>With Druma</span>
+                <img src="/data-label1.png" width="200px" alt="" />
+              </div>
+              <div>
+                <span>Without Druma</span>
+                <img src="/data-label2.png" width="200px" alt="" />
+              </div>
             </div>
           </div>
           <div className='max-w-2xl  text-left'>
@@ -84,7 +88,7 @@ function Home({darkMode}) {
         </button>
       </section>
 
-      <section id='section3' className="h-96 parallax bg-[url('/blue-grad.jpg')] bg-cover bg-center relative">
+      <section id='section3' className="p-4 h-96 parallax bg-[url('/blue-grad.jpg')] bg-cover bg-center relative">
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/80"></div>
         
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
@@ -98,7 +102,7 @@ function Home({darkMode}) {
         </div>
       </section>
 
-      <section id='section4' className={`${darkMode?"bg-customDark4 text-customWhite":'text-customBlack bg-customLight'} py-20 text-center`}>
+      <section id='section4' className={`p-4 ${darkMode?"bg-customDark4 text-customWhite":'text-customBlack bg-customLight'} py-20 text-center`}>
         <h2 className="text-5xl font-bold mb-4 animate-fadeInUp">Contact</h2>
         <p className="max-w-3xl mx-auto text-lg mb-8 animate-fadeInUp">
           Reach out to learn more about how our services can help your business grow.

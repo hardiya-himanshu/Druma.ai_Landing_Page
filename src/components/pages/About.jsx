@@ -3,11 +3,11 @@ import ThemeWrapper from '../../utils/ThemeWrapper'
 
 function About({darkMode}) {
   return (
-    <section className={` bg-gradient-to-br ${darkMode?"from-blue-900 via-blue-700 to-cyan-500  text-customWhite":'from-white to-gray-600 via-gray-400'} bg-[length:200%_200%] animate-gradientMove h-fit relative flex flex-col gap-20 items-center py-32`}>
+    <section className={`p-4 bg-gradient-to-br ${darkMode?"from-blue-900 via-blue-700 to-cyan-500  text-customWhite":'from-white to-gray-600 via-gray-400'} bg-[length:200%_200%] animate-gradientMove h-fit relative flex flex-col gap-20 items-center py-32`}>
         <div className={`absolute inset-0 bg-gradient-to-b ${darkMode?"from-black/10 via-black/60 to-customDark4/100":" from-black/0 to-black/80"}`}></div>
 
-        <div className="relative z-10 flex justify-center items-center  h-full text-center text-white max-w-5xl">
-          <div className='text-left'>
+        <div className="relative z-10 flex justify-center items-center  h-full text-center text-white max-w-5xl flex-wrap">
+          <div className='text-left max-w-xl'>
             <h1 className="text-6xl font-bold mb-4 animate-fadeInDown">
             Our Story</h1>
             <p className="text-lg mt-8 mb-4 animate-fadeInUp">
@@ -21,15 +21,15 @@ function About({darkMode}) {
             </p>
           </div>
           <div>
-            <img src="/story.png" width="600px" alt="" />
+            <img src="/story.png" width="400px" alt="" />
           </div>
         </div>
 
-        <div className="relative z-10 flex justify-center items-center gap-20 h-full text-center text-white max-w-5xl">
+        <div className="relative z-10 flex justify-center items-center gap-10 h-full text-center text-white max-w-5xl flex-wrap">
           <div>
-            <img src="/tech.png" width="600px" alt="" />
+            <img src="/tech.png" width="400px" alt="" />
           </div>
-          <div className='text-left'>
+          <div className='p-2 text-left max-w-xl'>
             <h1 className="text-6xl font-bold mb-4 animate-fadeInDown">
             Use of Technology</h1>
             <p className="text-lg mt-8 mb-4 animate-fadeInUp">

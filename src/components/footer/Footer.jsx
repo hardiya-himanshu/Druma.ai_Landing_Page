@@ -40,7 +40,7 @@ function Footer({darkMode}) {
                     </ul>
                 </div>
             </div>
-            <div className="w-full p-6 md:w-1/2 lg:w-3/12 flex justify-center">
+            <div className="w-full p-6 md:w-1/2 lg:w-3/12">
                 <div className="h-full">
                     <h3 className="tracking-px mb-9 text-md font-bold uppercase text-customBlue">
                         About
@@ -64,7 +64,7 @@ function Footer({darkMode}) {
             </div>
             
         
-            <div className="w-full p-6 md:w-1/2 lg:w-3/12 flex justify-center">
+            <div className="w-full p-6 md:w-1/2 lg:w-3/12">
                 <div className="h-full">
                     <h3 className="tracking-px mb-9 text-md font-bold uppercase text-customBlue">
                         Legals
@@ -97,7 +97,7 @@ function Footer({darkMode}) {
                     </ul>
                 </div>
             </div>
-            <div className="w-full p-6 md:w-1/2 lg:w-3/12 flex justify-center">
+            <div className="w-full p-6 md:w-1/2 lg:w-3/12">
                 <div className="h-full">
                     <h3 className="tracking-px mb-9 text-md font-bold uppercase text-customBlue">
                         Social

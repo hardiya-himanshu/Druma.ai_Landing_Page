@@ -18,12 +18,12 @@ const imgOfData =[
 function Services({darkMode}) {
   const [activeDiv, setActiveDiv] = useState(1)
   return (
-    <section className={` bg-gradient-to-br ${darkMode?"from-blue-900 via-blue-700 to-cyan-500  text-customWhite":'from-white to-gray-600 via-gray-400'} bg-[length:200%_200%] animate-gradientMove h-fit relative flex flex-col gap-20 items-center py-28`}>
+    <section className={`p-4 bg-gradient-to-br ${darkMode?"from-blue-900 via-blue-700 to-cyan-500  text-customWhite":'from-white to-gray-600 via-gray-400'} bg-[length:200%_200%] animate-gradientMove h-fit relative flex flex-col gap-20 items-center py-28`}>
         <div className={`absolute inset-0 bg-gradient-to-b ${darkMode?"from-black/10 via-black/60 to-customDark4/100":" from-black/0 to-black/80"}`}></div>
         <h1 className="text-6xl font-bold mb-4 text-white animate-fadeInDown z-10">
         Our Services</h1>
-        <div className="relative z-10 flex justify-center items-center  h-full text-center text-white max-w-5xl">
-          <div className='text-left'>
+        <div className="relative z-10 flex justify-center items-center  h-full text-center text-white max-w-5xl flex-wrap">
+          <div className='text-left max-w-xl'>
             <h1 className="text-5xl font-bold mb-4 animate-fadeInDown">
             AI Services</h1>
             <p className="text-lg mt-8 mb-4 animate-fadeInUp">
@@ -34,13 +34,13 @@ function Services({darkMode}) {
             </p>
           </div>
           <div>
-            <img src="/ai-service.png" width="600px" alt="" />
+            <img src="/ai-service.png" width="400px" alt="" />
           </div>
         </div>
 
-        <div className="w-full relative px-6 flex flex-col items-center justify-center ">
+        <div className="w-full relative px-6 flex flex-col items-center justify-center flex-wrap ">
           {/* Button to show different sections */}
-          <div className="flex gap-4">
+          <div className="flex gap-4 flex-wrap">
             <button 
               className={`bg-gradient-to-br font-semibold  py-2 px-3 rounded-lg cursor-pointer animate-fadeInUp duration-100 transition ${
                 activeDiv === 1 ? 'text-customWhite from-customBlue  to-customBlue2' : 'from-gray-200 to-gray-400 text-customBlack'
@@ -70,8 +70,8 @@ function Services({darkMode}) {
           {/* Show Div Content based on button click */}
           <div className={`text-customWhite bg-transparent w-full max-w-5xl h-fit p-4 rounded-lg flex items-center justify-center`}>
             {activeDiv === 1 && (
-              <div className=" flex gap-10 justify-center items-center">
-                <div className='mt-10'>
+              <div className=" flex gap-10 justify-center items-center flex-wrap">
+                <div className='mt-10  max-w-xl'>
                 <h2 className="text-4xl mb-5 font-bold">Automation</h2>
                 <p className='mb-2 text-lg'>Have a task which takes up your time? Automate it!</p>
                 <p className='mb-2 text-lg'>Many companies have started using robotic process automation (RPA) for performing tasks  like document scanning, filling in forms, moving data, opening documents and extracting data.</p>
@@ -79,13 +79,13 @@ function Services({darkMode}) {
                 <p className='mb-2 text-lg'>Discuss with us on how you can improve your productivity exponentially  (and save cost at the same time) by using RPA.</p>
                 </div>
                 <div>
-                <img src="/ai1.webp" alt="" />
+                <img src="/ai1.webp" width="300px" alt="" />
                 </div>         
               </div>
             )}
             {activeDiv === 2 && (
-              <div className=" flex gap-10 justify-center items-center">
-              <div className='mt-10'>
+              <div className=" flex gap-10 justify-center items-center flex-wrap">
+              <div className='mt-10 max-w-xl'>
               <h2 className="text-4xl mb-5 font-bold">Cognitive Insights</h2>
               <p className='mb-2 text-lg'>With the amount of data that is generated, it is not possible for a human to analyze everything and make decisions based on it.</p>
               <p className='mb-2 text-lg'>Artificial Intelligence is exceptionally good at finding patterns in large volumes of data and making predictions based on it in real-time.</p>
@@ -102,18 +102,18 @@ function Services({darkMode}) {
               <p className='mb-2 text-lg'>Get in touch to leverage the power of data for advanced analytics..</p>
               </div>
               <div>
-              <img src="/ai2.webp" alt="" />
+              <img src="/ai2.webp"  width="300px" alt="" />
               </div>         
             </div>
             )}
             {activeDiv === 3 && (
-              <div className=" flex gap-10 justify-center items-center">
-              <div className='mt-10'>
+              <div className=" flex gap-10 justify-center items-center flex-wrap">
+              <div className='mt-10 max-w-xl'>
               <h2 className="text-4xl mb-5 font-bold">Customer Engagement</h2>
               <p className='mb-2 text-lg'>A happy customer is a returning customer.</p>
               <p className='mb-2 text-lg'>Customer engagement has become the top most priority for many organizations.</p>
               <p className='mb-2 text-lg'>And a great way to provide top-notch, smooth and fast experience is by using AI.
-                <ul>        
+                <ul >        
                 &#8226; Chatbots <br />
                 &#8226; Intent prediction<br />
                 &#8226; Emotion analytics<br />
@@ -123,16 +123,16 @@ function Services({darkMode}) {
               <p className='mb-2 text-lg'>Discuss how you can give your customers a superior customer experience.</p>
               </div>
               <div>
-              <img src="/ai3.webp" alt="" />
+              <img src="/ai3.webp"  width="300px"alt="" />
               </div>         
             </div>
             )}
           </div>
         </div>
 
-        <div className="relative z-10 flex justify-center items-center gap-20 h-full text-center text-white max-w-5xl">
+        <div className="relative z-10 flex justify-center items-center gap-10 h-full text-center text-white max-w-5xl flex-wrap">
           
-          <div className='text-left max-w-3xl'>
+          <div className='text-left max-w-xl '>
             <h1 className="text-5xl font-bold mb-4 animate-fadeInDown">
             Data Labeling Services</h1>
             <p className="text-lg mt-8 mb-4 animate-fadeInUp">
@@ -145,23 +145,23 @@ function Services({darkMode}) {
             Druma provides you with high quality data labeling solution so you will never have to worry about data errors. If you have used our service, be assured that you are getting quality, error free, and clean data for training.
             </p>
           </div>
-          <div className='w-full'>
-            <img src="/data-service.png" width="800px" alt="" />
+          <div>
+            <img src="/data-service.png" width="400px" alt="" />
           </div>
          
         </div>
 
-        <div className='flex gap-10 justify-center items-center'>
+        <div className='flex gap-10 justify-center items-center flex-wrap'>
         <div className='relative'>
-            <h1 className='text-3xl font-bold mb-4 text-white text-center animate-fadeInDown'>Be it Images</h1>
-            <div className="bg-transparent h-96 text-center w-96 flex items-center justify-center">
+            <h1 className='text-3xl  min-w-20 font-bold mb-10 text-white text-center animate-fadeInDown'>Be it Images</h1>
+            <div className="bg-transparent h-96  min-w-20 text-center  flex items-center justify-center">
               <ImageCarousel images={images} />
             </div>
         </div>
         <div className=' relative text-3xl font-bold text-white'>OR</div>
         <div className='relative'>
-            <h1 className='text-3xl font-bold mb-4 text-white text-center animate-fadeInDown'>Text Data</h1>
-            <div className="bg-transparent h-96 text-center w-full flex items-center justify-center">
+            <h1 className='text-3xl font-bold mb-10 text-white text-center animate-fadeInDown'>Text Data</h1>
+            <div className="bg-transparent   min-w-20 h-96 text-center w-full flex items-center justify-center">
               <ImageCarousel images={imgOfData} />
             </div>
         </div>

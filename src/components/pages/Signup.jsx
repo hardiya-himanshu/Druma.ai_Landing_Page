@@ -21,7 +21,7 @@ function Signup({darkMode}) {
     <div className={`h-screen flex  w-screen`} >
       <div className={`bg-[url('/login-bg.jpg')] bg-cover w-2/3 h-screen`}>
       </div>
-      <div className={`${darkMode?"from-customDark2 via-customDark to-customBlack text-customWhite":"from-customLight2 text-customBlack to-customLight3 "} shadow-md h-full p-8 w-full max-w-lg bg-gradient-to-br flex  flex-col justify-center`}>
+      <div className={`${darkMode?"from-customDark2 via-customDark to-customBlack text-customWhite":"from-customLight2 text-customBlack to-customLight3 "} shadow-md h-full min-w-80 p-8 w-full max-w-lg bg-gradient-to-br flex  flex-col justify-center`}>
         <h2 className="text-4xl font-semibold text-center mb-10">SIGNUP</h2>
         <div className="flex mb-6 justify-center">Already a member? &nbsp;
           <span onClick={()=>navigate("/login")} className='text-customLightBlue font-semibold cursor-pointer'>
@@ -63,7 +63,7 @@ function Signup({darkMode}) {
             )}
           </div>
 
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center mb-6 ">
             <ReCAPTCHA
               sitekey={import.meta.env.VITE_SITE_KEY} 
               onChange={handleRecaptcha}

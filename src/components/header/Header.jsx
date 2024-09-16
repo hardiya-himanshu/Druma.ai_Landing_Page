@@ -53,16 +53,17 @@ function Header() {
 
   
   return (
-    <header className={` ${darkMode?" text-customWhite ":' text-customBlack'} bg-gradient-to-br flex items-center justify-between fixed z-50 px-3 right-0 left-0 top-0 transition-all duration-500 ${isScrolled ? `${darkMode?" text-customWhite bg-customDark2 ":'bg-customLight text-customBlack'}` : 'bg-transparent'}`}>
+    <header className={` ${darkMode?" text-customWhite ":' text-customBlack'} bg-gradient-to-br flex items-center justify-between fixed z-50 px-3 right-0 left-0 top-0 transition-all duration-500 ${isScrolled ? `${darkMode?" text-customWhite bg-customDark2 ":'bg-customLight text-customBlack'}` : 'bg-transparent'} p-2`}>
       <div  className="flex gap-3 items-center cursor-pointer" onClick={()=>navigate("/")}>
         <img src="/logo.webp" width="40px" alt="" />
         <div className="font-bold text-2xl ">Druma</div>
       </div>
-      <div className="flex gap-3 items-center">
-        <ul className="mx-auto w-fit p-2 flex gap-5">
+      <div className="flex gap-3 items-center mx-auto w-fit">
+        <ul className="flex gap-5 ">
+        
           {
             navItems.map((item, index)=>(
-               <li key={index} onClick={() => navigate(item.slug)} className={`cursor-pointer p-2 hover:rounded-xl font-semibold hover:text-customBlue duration-200`}>{item.name}</li>
+               <li key={index} onClick={() => navigate(item.slug)} className={`cursor-pointer p-2 hover:rounded-xl font-semibold hover:text-customBlue duration-200 navItems`}>{item.name}</li>
             ))
           }
         </ul>
@@ -81,16 +82,16 @@ function Header() {
         </svg>
         }
          <div >
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6" onClick={()=>{show_menu_opt(!menu_opt)}}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 hidden menuShow " onClick={()=>{show_menu_opt(!menu_opt)}}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
 
                 {menu_opt?
-                  <div className="flex flex-col gap-3 items-center">
-                  <ul className="absolute right-0 mx-auto w-fit px-10 border justify-between top-10 flex flex-col gap-5">
+                  <div className={`flex flex-col  items-center `}>
+                  <ul className={`fixed left-2  right-2 mx-auto w-full  p-2 border justify-between top-16 flex flex-col gap-5 ${darkMode?"bg-customDark overflow-hidden text-customWhite":'bg-white text-customBlack'} rounded-lg `}>
                     {
                       navItems.map((item, index)=>(
-                        <li key={index} onClick={() => navigate(item.slug)} className={`cursor-pointer p-2 hover:rounded-xl font-semibold hover:text-customBlue duration-200`}>{item.name}</li>
+                        <li key={index} onClick={() => navigate(item.slug)} className={` text-lg cursor-pointer p-2 hover:rounded-xl font-semibold hover:text-customBlue duration-200`}>{item.name}</li>
                       ))
                     }
                   </ul>

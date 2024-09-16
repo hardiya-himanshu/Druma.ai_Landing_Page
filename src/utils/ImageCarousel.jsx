@@ -17,13 +17,13 @@ const ImageCarousel = ({ images, darkMode }) => {
   };
 
   return (
-    <div className="relative w-full max-w-xl mx-auto bg-transparent">
+    <div className="relative w-full  max-w-xl mx-auto bg-transparent">
       {/* Image Display */}
       <div className="relative h-fit w-full overflow-hidden rounded-lg">
         <img
           src={images[currentIndex]}
           alt={`Slide ${currentIndex}`}
-          className="w-full h-full object-cover transition duration-500"
+          className="w-full h-full object-cover transition duration-500  "
         />
       </div>
 
