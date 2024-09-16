@@ -24,7 +24,7 @@ function Signup({darkMode}) {
       <div className={`${darkMode?"from-customDark2 via-customDark to-customBlack text-customWhite":"from-customLight2 text-customBlack to-customLight3 "} shadow-md h-full p-8 w-full max-w-lg bg-gradient-to-br flex  flex-col justify-center`}>
         <h2 className="text-4xl font-semibold text-center mb-10">SIGNUP</h2>
         <div className="flex mb-6 justify-center">Already a member? &nbsp;
-          <span onClick={()=>navigate("/login")} className='text-customLightBlue cursor-pointer'>
+          <span onClick={()=>navigate("/login")} className='text-customLightBlue font-semibold cursor-pointer'>
             Login
           </span>
         </div>
@@ -72,7 +72,7 @@ function Signup({darkMode}) {
               
           <button
             type="submit"
-            className="w-full bg-customBlue max-w-xs text-white py-2 rounded-lg hover:bg-customLightBlue transition-all">
+            className="w-full bg-gradient-to-br font-semibold text-customWhite from-customBlue  to-customBlue2 py-2 px-3 rounded-lg cursor-pointer animate-fadeInUp  transition duration-300 mt-4 max-w-xs">
             Signup
           </button>
         </form>

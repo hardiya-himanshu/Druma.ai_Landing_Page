@@ -40,11 +40,11 @@ function ContactUs({darkMode}) {
 
             <select 
               {...register('service', { required: true })} 
-              className="w-full placeholder:text-gray-500 py-2  bg-transparent border-b-2  max-w-xs focus:outline-none focus:border-b-2 focus:border-b-customBlue focus:shadow-blue-700 focus:shadow-[0_10px_7px_-5px_rgba(0,0,0,0.3)]">
-              <option value="">-- Select a Service --</option>
-              <option value="remoteAI">Remote AI</option>
-              <option value="dataLabeling">Data Labeling</option>
-              <option value="both">Both</option>
+              className="w-full placeholder:text-gray-500 py-2 bg-transparent border-b-2  max-w-xs focus:outline-none focus:border-b-2 focus:border-b-customBlue focus:shadow-blue-700 focus:shadow-[0_10px_7px_-5px_rgba(0,0,0,0.3)]">
+              <option value="" className=' text-customBlack'>-- Select a Service --</option>
+              <option value="remoteAI" className=' text-customBlack'>Remote AI</option>
+              <option value="dataLabeling" className=' text-customBlack'>Data Labeling</option>
+              <option value="both" className=' text-customBlack'>Both</option>
             </select>
             {errors.service && <p className="text-red-600 text-sm mt-1  ">Service is required.</p>}
           </div>

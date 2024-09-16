@@ -42,7 +42,7 @@ function Reset_Password({darkMode}) {
               
           <button
             type="submit"
-            className="w-full mt-5 bg-customBlue max-w-xs text-white py-2 rounded-lg hover:bg-customLightBlue transition-all">
+            className="w-full bg-gradient-to-br font-semibold text-customWhite from-customBlue  to-customBlue2 py-2 px-3 rounded-lg cursor-pointer animate-fadeInUp  transition duration-300 mt-4 max-w-xs">
             Reset Password
           </button>
         </form>
